@@ -5,7 +5,6 @@ function struct(func) {
         return f;
     };
 }
-
 var MemberInfo = struct(function MemberInfo(name, curName, curServer) {
     this.name = name;
     this.curName = curName;
