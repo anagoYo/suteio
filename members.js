@@ -5,6 +5,7 @@ function struct(func) {
         return f;
     };
 }
+
 var MemberInfo = struct(function MemberInfo(name, curName, curServer) {
     this.name = name;
     this.curName = curName;
@@ -28,7 +29,7 @@ function getOnlineServer(json){
 const getMembers = () =>{
     return new Promise((resolve, reject)=>{
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://anagoyo.github.io/suteio/static/api/SuteioMembers.json");
+        xhr.open("GET", "https://azarasi-0925.github.io/suteio/static/api/SuteioMembers.json");
         xhr.responseType = 'json';
         xhr.addEventListener('load', function() {
             console.log(xhr.response);
