@@ -29,7 +29,7 @@ function getOnlineServer(json){
 const getMembers = () =>{
     return new Promise((resolve, reject)=>{
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://anagoyo.github.io/suteio/static/api/SuteioMembers.json");
+        xhr.open("GET", "./static/api/SuteioMembers.json");
         xhr.responseType = 'json';
         xhr.addEventListener('load', function() {
             console.log(xhr.response);
