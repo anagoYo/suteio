@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rust</title>
+    <link rel="stylesheet" href="tracker.css">
+    <script type="text/javascript" src="./tracker.js"></script>
+</head>
+<body>
+    <div style="border: 2px solid black; display:flex;">
+        <div id="field1">
+            <p style="margin: 0">読み込み(csv)</p>
+            <input id="inputCsvFile" type="file">
+        </div>
+        <div id="field1">
+            <p style="margin: 0">出力</p>
+            <button id="exportCsvFile" onclick="uidExportDownload();">csv</button>
+        </div>
+        <div id="field1">
+            <button id="reset" onclick="reset();">リセット</button>
+        </div>
+    </div>
+
+    <table border="1" id="list">
+        <thead>
+            <tr>
+                <td>uid</td>
+                <td>名前</td>
+                <td>サーバー</td>
+            </tr>
+        </thead>
+        <tbody id="bo">
+            <!--
+            <tr>
+                <td>000000000</td>
+                <td>あなご</td>
+                <td>Rustoria.co - US Main</td>
+            </tr>
+            -->
+        <tbody>
+    </table>
+</body>
+</html>
