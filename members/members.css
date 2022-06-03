@@ -1,0 +1,11 @@
+div.suteioF {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80vmin;
+    border: 2px solid black;
+}
+
+table.members {
+    border: 2px black solid;
+}
